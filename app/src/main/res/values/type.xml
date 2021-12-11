@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.AndroidToDo.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/jetbrainsmono_regular</item>
+    </style>
+
+    <style name="TextAppearance.AndroidToDo.Title" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/jetbrainsmono_medium</item>
+    </style>
+
+    <style name="TextAppearance.AndroidToDo.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/jetbrainsmono_regular</item>
+    </style>
+
+    <style name="TextAppearance.AndroidToDo.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/jetbrainsmono_regular</item>
+    </style>
+
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.edittodo.EditFragment">
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/todo_title_update"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="@string/title_todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/update_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="textCapSentences"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/todo_description_update"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_margin="16dp"
+        android:hint="@string/description"
+        android:layout_marginBottom="500dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/todo_title_update">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/update_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences|textMultiLine" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/todo_description_update"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/todo_date_update"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:hint="@string/dueDate">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/update_dueDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="textCapSentences"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_updateDate"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="72dp"
+            android:background="@drawable/ic_date_range_24px"
+            app:backgroundTint="@color/blue"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reminderUpdate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date_layout"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_alarm_24px"
+            android:tint="@color/blue"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/reminderTextUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/charcoral"
+            android:layout_gravity="center"
+            android:text="@string/notify_me"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Switch
+            android:id="@+id/checkRemindUpdate"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="80dp"
+            android:layout_height="wrap_content"
+            app:useMaterialThemeColors="false"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTintMode="src_in"
+        android:text="@string/btn_update"
+        app:backgroundTint="@color/blue"
+        app:icon="@drawable/ic_update_24px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reminderUpdate_layout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

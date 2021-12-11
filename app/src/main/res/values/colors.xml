@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#151515</color>
+    <color name="colorPrimaryDark">#073042 </color>
+    <color name="colorAccent">#ff9a8d</color>
+    <color name="red">#D32F2F</color>
+    <color name="lime">#cddc39</color>
+    <color name="green">#5185E1</color>
+    <color name="white">#FFFF</color>
+    <color name="mustard">#f3ca20</color>
+    <color name="maroon">#7a2048</color>
+    <color name="blue">#0C0C0C</color>
+    <color name="charcoral">#3b4d61</color>
+    <color name="tosca">#0A0A0A</color>
+</resources>

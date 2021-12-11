@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/todoRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/recycler_view_padding_bottom"
+        android:clipToPadding="false"
+        tools:listitem="@layout/todo_item"/>
+
+
+    <TextView
+        android:id="@+id/empty_list_message"
+        style="?attr/textAppearanceBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="400dp"
+        android:text="@string/please_add_todo_list" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="70dp"
+        android:src="@drawable/ic_add_white_24dp"
+        app:backgroundTint="@color/blue"
+        app:fabSize="normal"
+        android:layout_gravity="bottom|right"
+        app:tint="@color/white"
+        app:hideOnScroll="true" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

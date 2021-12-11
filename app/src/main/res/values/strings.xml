@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ToDo List</string>
+    <string name="please_add_todo_list">To do list Empty</string>
+    <string name="label_todo_list">Home</string>
+    <string name="todo_icon" translatable="false">task_icon</string>
+    <string name="delete_todo_button">delete_todo_button</string>
+    <string name="error_loading_data">Error loading data</string>
+    <string name="title_todo">Title</string>
+    <string name="add_btn">Create</string>
+    <string name="btn_update">Update</string>
+    <string name="label_addTodo">Create</string>
+    <string name="label_editTodo">Update</string>
+    <string name="login">Login</string>
+    <string name="never_update">Never Updated</string>
+    <string name="btn_edit">Edit</string>
+    <string name="add_to_do">Add To Do</string>
+    <string name="description">Description</string>
+    <string name="empty_image">Empty Image</string>
+    <string name="edit_to_do">Edit To Do</string>
+    <string name="update">Updated</string>
+    <string name="due_date">Due</string>
+    <string name="dueDate">Time</string>
+    <string name="sort_by_created_date">Praveen</string>
+    <string name="search_hint">Search</string>
+    <string name="created">Created</string>
+    <string name="created_date_view">Date Created</string>
+    <string name="notify_me">Notify Me One Hour Before</string>
+    <string name="sort_by">sortBy</string>
+    <string name="task">Task</string>
+    <string name="praveen">Praveen</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_app_bar_fab_cradle_corner_radius">32dp</dimen>
+    <dimen name="bottom_app_bar_fab_cradle_margin">8dp</dimen>
+    <dimen name="image_button_large_size">48dp</dimen>
+    <dimen name="card_margin">8dp</dimen>
+    <dimen name="card_corner_radius">8dp</dimen>
+    <dimen name="recycler_view_padding_bottom">64dp</dimen>
+    <dimen name="title_top">5dp</dimen>
+    <dimen name="description_height">50dp</dimen>
+</resources>

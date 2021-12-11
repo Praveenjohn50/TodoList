@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.AndroidToDo.Headline6</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.AndroidToDo.Body1</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.AndroidToDo.Caption</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.AndroidToDo.Title</item>
+        <item name="checkboxStyle">@style/Widget.MaterialComponents.CompoundButton.CheckBox</item>
+    </style>
+</resources>

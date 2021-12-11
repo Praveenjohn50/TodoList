@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/todoFragment"
+        android:name="id.ac.unhas.todolistapp.ui.todolist.TodoListFragment"
+        android:label="@string/label_todo_list"
+        tools:layout="@layout/todo_list_fragment">
+        <action
+            android:id="@+id/action_todoList_to_add"
+            app:destination="@id/addTodoFragment"
+            app:enterAnim="@anim/enter_slide_down"
+            app:exitAnim="@anim/exit_slide_down"
+            app:popEnterAnim="@anim/pop_enter_slide_up"
+            app:popExitAnim="@anim/pop_exit_slide_up"/>
+
+        <action
+            android:id="@+id/action_todoList_to_edit"
+            app:destination="@id/editTodoFragment"
+            app:enterAnim="@anim/enter_slide_down"
+            app:exitAnim="@anim/exit_slide_down"
+            app:popEnterAnim="@anim/pop_enter_slide_up"
+            app:popExitAnim="@anim/pop_exit_slide_up">
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/addTodoFragment"
+        android:name="id.ac.unhas.todolistapp.ui.addtodo.AddTodoFragment"
+        android:label="@string/label_addTodo"
+        tools:layout="@layout/add_todo_fragment" />
+
+    <fragment
+        android:id="@+id/editTodoFragment"
+        android:name="id.ac.unhas.todolistapp.ui.edittodo.EditFragment"
+        android:label="@string/label_editTodo"
+        tools:layout="@layout/edit_fragment" >
+        <argument
+            android:name="todoId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="id.ac.unhas.todolistapp.ui.login.LoginFragment"
+        android:label="@string/login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/loginSuccess"
+            app:destination="@id/todoFragment"
+            app:enterAnim="@anim/enter_slide_down"
+            app:exitAnim="@anim/exit_slide_down"
+            app:popEnterAnim="@anim/pop_enter_slide_up"
+            app:popExitAnim="@anim/pop_exit_slide_up">
+        </action>
+    </fragment>
+</navigation>
